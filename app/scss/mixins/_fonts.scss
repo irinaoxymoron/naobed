@@ -1,0 +1,15 @@
+/* @import must be at top of file, otherwise CSS will not work */
+/*   
+@font-face {font-family: 'HelveticaNeueLTStd-Bd';src: url('../fonts/Helvetica/3387D5_0_0.eot');src: url('../fonts/Helvetica/3387D5_0_0.eot?#iefix') format('embedded-opentype'),url('../fonts/Helvetica/3387D5_0_0.woff2') format('woff2'),url('../fonts/Helvetica/3387D5_0_0.woff') format('woff'),url('../fonts/Helvetica/3387D5_0_0.ttf') format('truetype');}
+*/
+
+@font-face {
+  font-family: 'OpenSans-Regular';
+  src: url('../fonts/OpenSans/OpenSans-Regular.eot') format('embedded-opentype'), url('../fonts/OpenSans/OpenSans-Regular.woff2') format('woff2'), url('../fonts/OpenSans/OpenSans-Regular.woff') format('woff'), url('../fonts/OpenSans/OpenSans-Regular.ttf') format('truetype');
+}
+
+@mixin OpenSans-Regular() {
+  font-family: OpenSans-Regular;
+  font-weight: normal;
+  font-style: normal;
+}
