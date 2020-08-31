@@ -1,1 +1,31 @@
-// header
+.header {
+    margin: 20px 0;
+
+    .content {
+        display: flex;
+    }
+
+    .menu {
+        @include Cormac-Black();
+        font-size: 14px;
+        text-transform: uppercase;
+    
+        &__list {
+            display: flex;
+            list-style: none;
+        }
+    }
+
+    &__logo {
+        width: 250px;
+    }
+
+    &__icon {
+        height: 35px;
+        width: auto;
+    }
+}
+
+@media only screen and (max-width : 960px) {
+
+}

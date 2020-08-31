@@ -1,15 +1,34 @@
 /* @import must be at top of file, otherwise CSS will not work */
-/*   
-@font-face {font-family: 'HelveticaNeueLTStd-Bd';src: url('../fonts/Helvetica/3387D5_0_0.eot');src: url('../fonts/Helvetica/3387D5_0_0.eot?#iefix') format('embedded-opentype'),url('../fonts/Helvetica/3387D5_0_0.woff2') format('woff2'),url('../fonts/Helvetica/3387D5_0_0.woff') format('woff'),url('../fonts/Helvetica/3387D5_0_0.ttf') format('truetype');}
-*/
 
 @font-face {
-  font-family: 'OpenSans-Regular';
-  src: url('../fonts/OpenSans/OpenSans-Regular.eot') format('embedded-opentype'), url('../fonts/OpenSans/OpenSans-Regular.woff2') format('woff2'), url('../fonts/OpenSans/OpenSans-Regular.woff') format('woff'), url('../fonts/OpenSans/OpenSans-Regular.ttf') format('truetype');
+  font-family: 'Cormac-Black';
+  src: url('../fonts/Cormac-Black/Cormac-Black.eot') format('embedded-opentype'), url('../fonts/Cormac-Black/Cormac-Black.woff2') format('woff2'), url('../fonts/Cormac-Black/Cormac-Black.woff') format('woff'), url('../fonts/Cormac-Black/Cormac-Black.ttf') format('truetype');
 }
 
-@mixin OpenSans-Regular() {
-  font-family: OpenSans-Regular;
+@mixin Cormac-Black() {
+  font-family: Cormac-Black;
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto-MediumItalic';
+  src: url('../fonts/Roboto-MediumItalic/Roboto-MediumItalic.eot') format('embedded-opentype'), url('../fonts/Roboto-MediumItalic/Roboto-MediumItalic.woff2') format('woff2'), url('../fonts/Roboto-MediumItalic/Roboto-MediumItalic.woff') format('woff'), url('../fonts/Roboto-MediumItalic/Roboto-MediumItalic.ttf') format('truetype');
+}
+
+@mixin Roboto-MediumItalic() {
+  font-family: Roboto-MediumItalic;
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto-Regular';
+  src: url('../fonts/Roboto-Regular/Roboto-Regular.eot') format('embedded-opentype'), url('../fonts/Roboto-Regular/Roboto-Regular.woff2') format('woff2'), url('../fonts/Roboto-Regular/Roboto-Regular.woff') format('woff'), url('../fonts/Roboto-Regular/Roboto-Regular.ttf') format('truetype');
+}
+
+@mixin Roboto-Regular() {
+  font-family: Roboto-Regular;
   font-weight: normal;
   font-style: normal;
 }

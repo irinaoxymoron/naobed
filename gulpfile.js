@@ -18,28 +18,19 @@ var gulp = require('gulp'),
     argv = require('yargs').argv,
     spritesmith = require('gulp.spritesmith'),
     prod = argv.prod; // минификация
-    //Подключение php npm install --save-dev gulp-connect-php
-    // connectPHP = require('gulp-connect-php');
 
 
 var app_dir = 'app';
 var wp_dir = 'dist';
 
-// gulp.task('php', function(){
-//     connectPHP.server({base:'./', port:8010, keepalive:true});
-// });
-
 
 gulp.task('browser-sync', function () {
     browserSync.init({
         server: {
-            baseDir: wp_dir,
-            // index: "/index.php",
-            // proxy: "127:0:0:1:8010"
+            baseDir: wp_dir
         }
     });
 });
-
 
 gulp.task('sass', function () {
     return gulp.src(app_dir + '/scss/**/*.scss')
@@ -66,24 +57,6 @@ gulp.task('moveHtml', function () {
     return gulp.src(app_dir + '/*.html')
         .pipe(fileinclude())
         .pipe(gulp.dest(wp_dir));
-});
-
-gulp.task('movePhp', function () {
-    return gulp.src(app_dir + '/*.php')
-        .pipe(fileinclude())
-        .pipe(gulp.dest(wp_dir));
-});
-
-gulp.task('moveArticlesPhp', function () {
-    return gulp.src(app_dir + '/articles/*.php')
-        .pipe(fileinclude())
-        .pipe(gulp.dest(wp_dir + '/articles'));
-});
-
-gulp.task('moveCorePhp', function () {
-    return gulp.src(app_dir + '/core/*.php')
-        .pipe(fileinclude())
-        .pipe(gulp.dest(wp_dir + '/core'));
 });
 
 /*   Sprite   */
@@ -114,18 +87,12 @@ gulp.task('watch', function () {
     gulp.watch(app_dir + '/scss/**/*.scss', gulp.series('sass'));
     gulp.watch(app_dir + '/js/*.js', gulp.series('moveJs'));
     gulp.watch(app_dir + '/**/*.html', gulp.series('moveHtml'));
-    gulp.watch(app_dir + '/**/*.php', gulp.series('movePhp'));
-    gulp.watch(app_dir + '/articles/*.php', gulp.series('moveArticlesPhp'));
-    gulp.watch(app_dir + '/core/*.php', gulp.series('moveCorePhp'));
     gulp.watch(app_dir + '/img/*.*', gulp.series('moveImg'));
     // gulp.watch(app_dir + '/**/*').on('change', browserSync.reload);
 });
 
 gulp.task('rebase', gulp.series(
     'moveHtml',
-    'movePhp',
-    'moveArticlesPhp',
-    'moveCorePhp',
     'moveImg',
     'moveJs',
     'sass',
