@@ -1,0 +1,13 @@
+.promo {
+    margin-top: 48px;
+
+    &__item {
+        display: flex;
+        background-color: #ffd500;
+        border-radius: 18px;
+    }
+    &__icon {
+        max-width: 445px;
+        width: 100%;
+    }
+}

@@ -1,0 +1,8 @@
+.novelty {
+    &__title {
+        @include Cormac-Black();
+        text-align: center;
+        font-size: 57px;
+        line-height: 59px;
+    }
+}

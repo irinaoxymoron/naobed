@@ -1,0 +1,41 @@
+.categories {
+    &__list {
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-end;
+        flex-wrap: wrap;
+    }
+    &__item {
+        margin: 20px;
+    }
+    &__link {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    &__text {
+        @include Cormac-Black();
+        font-size: 17px;
+        text-transform: uppercase;
+        text-align: center;
+        margin-top: 18px;
+        position: relative;
+        display: inline-block;
+    }
+    &__link p:before {
+        content: "";
+        width: 0;
+        height: 10px;
+        top: 8px;
+        left: -15px;
+        z-index: -1;
+        position: absolute;
+        display: inline-block;
+        background-color: #fff969;
+        transition: 0.2s linear;
+    }
+    &__link:hover p:before {
+        width: 100%;
+    }
+}

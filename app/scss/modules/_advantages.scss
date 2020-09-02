@@ -1,0 +1,28 @@
+.advantages {
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    &__item {
+        text-align: center;
+        background-color: #ffde00;
+        border-radius: 20px;
+        padding: 60px 25px;
+        width: 30%;
+    }
+    &__icon {
+        height: 60px;
+        width: auto;
+    }
+    &__title {
+        @include Cormac-Black();
+        font-size: 18px;
+        line-height: 20px;
+        text-transform: uppercase;
+    }
+    &__text {
+        font-size: 17px;
+        line-height: 21px;
+    }
+}

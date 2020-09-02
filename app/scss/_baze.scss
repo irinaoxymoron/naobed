@@ -24,7 +24,8 @@ html{
 }
 
 .content {
-  max-width: 1154px;
+  max-width: 1174px;
+  padding: 0 10px;
   margin: 0 auto;
 }
 
@@ -60,6 +61,9 @@ img {
   max-width: 100%;
   height: auto;
   vertical-align: top;
+}
+ul li {
+  list-style: none;
 }
 
 ul,
