@@ -1,8 +1,12 @@
 .novelty {
+
+    margin-top: 50px;
+
     &__title {
         @include Cormac-Black();
         text-align: center;
         font-size: 57px;
         line-height: 59px;
+        text-transform: uppercase;
     }
 }

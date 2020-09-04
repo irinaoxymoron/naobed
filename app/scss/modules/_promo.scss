@@ -1,13 +1,162 @@
 .promo {
     margin-top: 48px;
 
+    &__list {
+        border-radius: 18px;
+        overflow: hidden;
+        z-index: 12;
+        position: relative;
+    }
+
     &__item {
         display: flex;
-        background-color: #ffd500;
-        border-radius: 18px;
+        padding-bottom: 9px;
+
+        &--green {
+            background-color: #8aff98;
+
+            & h2 {
+                color: #187100;
+            }
+
+            & a {
+                background-color: #187100;
+            }
+        }
+        &--blue {
+            background-color: #71eff9;
+
+            & h2 {
+                color: #2d4968;
+            }
+
+            & a {
+                background-color: #2d4968;;
+            }
+        }
+        &--yellow {
+            background-color: #ffd500;
+
+            & h2 {
+                color: #ff4b2e;
+            }
+
+            & a {
+                background-color: #ff4b2e;;
+            }
+        }
     }
+
+    &__info {
+        padding: 0 60px;
+        max-width: 610px;
+        margin-right: 20px;
+    }
+
+    &__title {
+        @include Cormac-Black();
+        font-size: 57px;
+        line-height: 63px;
+        text-transform: uppercase;
+        margin-top: 64px;
+    }
+
+    &__text {
+        margin-top: 16px;
+        font-size: 17px;
+        line-height: 21px;
+    }
+
     &__icon {
         max-width: 445px;
         width: 100%;
+        padding: 30px 0;
+    }
+
+    &__btn {
+        @include Cormac-Black();
+        display: inline-block;
+        margin-top: 23px;
+        font-size: 14px;
+        line-height: 14px;
+        color: #fff;
+        padding: 18px 50px;
+        border-radius: 25px;
+        text-transform: uppercase;
+        box-shadow: 6px 9px 0px -5px rgba(255,255,0,1);
+        transition: .3s;
+
+        &:hover {
+            opacity: .7;
+        }
     }
 }
+
+.tab-menu {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    z-index: 1;
+    margin-top: -20px;
+}
+
+.tab-menu li {
+    position:relative;
+    display: flex;
+    padding: 0;
+    cursor:pointer;
+    z-index:0;
+    width: 32%;
+    border-radius: 0 0 18px 18px;
+
+    & img {
+        width: 160px!important;
+        border-radius: 18px;
+    }
+
+    & p {
+        @include Cormac-Black();
+        font-size: 14px;
+        line-height: 18px;
+        text-transform: uppercase;
+        margin-top: 45px;
+        margin-left: 20px;
+    }
+}
+
+.tab--green {
+    background-color: #8aff98;
+    color: #187100;
+}
+.tab--blue {
+    background-color: #71eff9;
+    color: #2d4968;
+}
+.tab--yellow {
+    background-color: #ffd500;
+    color: #ff4b2e;
+}
+
+.tab-menu li.active {
+    color: transparent;
+    opacity: 1;
+
+    & img {
+        display: none;
+    }
+}
+  
+.tab-menu li.active:hover {
+    color: transparent;
+}
+
+.line {
+    position:absolute;
+    width: 0;
+    height: 7px;
+    top: 0;
+    left: 0;
+}
+  
+  
+  

@@ -20,6 +20,9 @@
         &__item {
             margin-right: 22px;
         }
+        &__item--phone {
+            display: none;
+        }
         &__link {
             color: #23476d;
             position: relative;
@@ -39,6 +42,10 @@
         &__link:hover:before {
             width: 100%;
         }
+    }
+
+    &__link--phone {
+        display: none;
     }
 
     &__logo--wrap {
@@ -61,6 +68,7 @@
         width: 45%;
         display: flex;
         justify-content: flex-end;
+        flex-wrap: wrap;
     }
 
     &__item {
@@ -98,22 +106,11 @@
     right: -7px;
 }
 
-.header__fixed {
-    position: fixed;
-    top: 0;
-    background: #fff;
-    width: 100%;
-    margin: 0;
-    z-index: 999;
-    box-shadow: 0px 3px 9px 0px rgba(214,214,214,0.65);
-    padding-top: 10px;
-}
-
 .menu-trigger {
 	display: none;
 	position: absolute;
     top: 40px;
-    right: 20px;
+    left: 20px;
     z-index: 999999;
     width: 35px;
     height: 35px;
@@ -123,8 +120,7 @@
     	position: absolute;
     	height: 4px;
     	width: 100%;
-    	background: #0076cc;
-    	border-radius: 9px;
+    	background: #2d4a69;
     	opacity: 1;
     	left: 0;
     	transform: rotate(0deg);
@@ -147,7 +143,7 @@
 .menu_state_open {
 
 	& span {
-		background: #fff;
+		background: #2d4a69;
 	}
 	
 	& span:nth-child(1) {
@@ -168,30 +164,85 @@
 		top: 18px;
     	width: 0%;
     	left: 50%;
-	}
+    }
 }
 
 @media only screen and (max-width : 960px) {
+
+    .header {
+       margin-top: 20px;
+    }
+
     .ul-trigger {
 		position: absolute;
     	top: 0;
     	left: 0;
     	z-index: 8888;
     	width: 100%;
-    	background: #0082cf;
+    	background: #fff;
     	height: 100vh;
-    	padding: 40px 20px;
+    	padding: 90px 0 40px;
+        text-align: center;
 	}
 
-	ul.menu__list {
+	.header .menu__list {
 		display: none;
-	}
+    }
+    
+    .header__list {
+        display: none;
+    }
 
-	.menu__item {
-		display: block;
-	}
+    .header__link--visible {
+        display: none;
+    }
+
+    .header__logo--wrap {
+        width: 50%;
+        display: block;
+        z-index: 8888;
+    }
+
+    .card__full {
+        display: block;
+        z-index: 8888;
+    }
+
+	.header .menu__item {
+        display: block;
+        border-bottom: 1px solid #d5dbe1;
+        padding: 18px 0 16px;
+        margin-right: 0;
+        font-size: 14px;
+        line-height: 14px;
+    }
+    
+    .header__link--phone {
+        display: inline-block;
+        padding: 18px 60px;
+
+        & img {
+            margin-left: 0;
+        }
+    }
+
+    .header__link--left {
+        border-right: 1px solid #d5dbe1;
+    }
 
 	.menu-trigger {
 		display: inline-block;
-	}
+    }
+
+}
+
+.header__fixed {
+    position: fixed;
+    top: 0;
+    background: #fff;
+    width: 100%;
+    margin: 0;
+    z-index: 999;
+    box-shadow: 0px 3px 9px 0px rgba(214,214,214,0.75);
+    padding: 10px 0;
 }

@@ -6,15 +6,17 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>На обед</title>
 	<link href='css/style.css' media='screen, projection' rel='stylesheet' type='text/css' />
+	<link rel="stylesheet" type="text/css" href="css/slick.css"/>
+	<link rel="stylesheet" type="text/css" href="css/slick-theme.css"/>
 	<link href="../img/favicon.ico" rel="shortcut icon" type="image/x-icon" />
 </head>
 <body>
 	@@include('./header.html')
 
 	<div class="promo">
-		<div class="content">
-			<div class="promo__list">
-				<div class="promo__item">
+		<div class="content tab-wrapper">
+			<div class="tab-content promo__list">		
+				<div class="promo__item promo__item--green">
 					<div class="promo__info">
 						<h2 class="promo__title">Заголовок на несколько строк</h2>
 						<p class="promo__text">Оплаченные заказы не&nbsp;подлежат редактированию. <br> Доставка еды осуществляется по&nbsp;всему городу Минску строго в&nbsp;соответствии с&nbsp;границами зоны доставки.</p>
@@ -24,7 +26,41 @@
 						<img src="../img/promo__img.png" alt="Сок" class="promo__icon">
 					</div>
 				</div>
-			</div>
+				<div class="promo__item promo__item--blue">
+					<div class="promo__info">
+						<h2 class="promo__title">Заголовок на несколько строк</h2>
+						<p class="promo__text">Оплаченные заказы не&nbsp;подлежат редактированию. <br> Доставка еды осуществляется по&nbsp;всему городу Минску строго в&nbsp;соответствии с&nbsp;границами зоны доставки.</p>
+						<a href="#" class="promo__btn">Подробнее</a>
+					</div>
+					<div class="promo__img">
+						<img src="../img/promo__img.png" alt="Сок" class="promo__icon">
+					</div>
+				</div>
+				<div class="promo__item promo__item--yellow">
+					<div class="promo__info">
+						<h2 class="promo__title">Заголовок на несколько строк</h2>
+						<p class="promo__text">Оплаченные заказы не&nbsp;подлежат редактированию. <br> Доставка еды осуществляется по&nbsp;всему городу Минску строго в&nbsp;соответствии с&nbsp;границами зоны доставки.</p>
+						<a href="#" class="promo__btn">Подробнее</a>
+					</div>
+					<div class="promo__img">
+						<img src="../img/promo__img.png" alt="Сок" class="promo__icon">
+					</div>
+				</div>
+			</div><!-- //tab-content -->
+			<ul class="tab-menu">
+				<li class="tab--green active">
+					<img src="../img/tab__icon.png" alt="Суп">
+					<p>Супы-новинки уже в&nbsp;продаже!</p>
+				</li>
+				<li class="tab--blue">
+					<img src="../img/tab__icon.png" alt="Суп">
+					<p>Супы-новинки уже в&nbsp;продаже!</p>
+				</li>
+				<li class="tab--yellow">
+					<img src="../img/tab__icon.png" alt="Суп">
+					<p>Супы-новинки уже в&nbsp;продаже!</p>
+				</li>
+			</ul>
 		</div>
 	</div>
 
@@ -102,6 +138,7 @@
 	@@include('./footer.html')
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+	<script src="js/slick.min.js"></script>
 	<script src="js/js-main.js"></script>
 </body>
 </html>
