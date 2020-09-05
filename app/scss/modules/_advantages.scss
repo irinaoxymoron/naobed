@@ -1,4 +1,7 @@
 .advantages {
+
+    margin-top: 90px;
+
     &__list {
         display: flex;
         justify-content: space-between;
@@ -8,8 +11,9 @@
         text-align: center;
         background-color: #ffde00;
         border-radius: 20px;
-        padding: 60px 25px;
-        width: 30%;
+        padding: 60px 25px 50px;
+        width: 32%;
+        max-width: 366px;
     }
     &__icon {
         height: 60px;
@@ -20,9 +24,24 @@
         font-size: 18px;
         line-height: 20px;
         text-transform: uppercase;
+        margin-top: 30px;
     }
     &__text {
         font-size: 17px;
         line-height: 21px;
+        margin-top: 7px;
+    }
+}
+
+@media only screen and (max-width : 960px)  {
+    .advantages {
+        &__list {
+            flex-direction: column;
+            align-items: center;
+        }
+        &__item {
+            width: 100%;
+            margin-bottom: 40px;
+        }
     }
 }

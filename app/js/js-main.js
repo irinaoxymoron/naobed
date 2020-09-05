@@ -65,5 +65,36 @@ $(document).ready(function(){
     
     });//end ready
 
+    $('.novelty__slider').slick({
+      slidesToShow: 3,
+      slidesToScroll: 3,
+      // autoplay: true,
+      // autoplaySpeed: 6000,
+      arrows : false,
+      responsive: [
+          {
+            breakpoint: 865,
+            settings: {
+              slidesToShow: 3,
+              slidesToScroll: 3
+            }
+          },
+          {
+            breakpoint: 625,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 2
+            }
+          },
+          {
+            breakpoint: 500,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1
+            }
+          }
+        ]
+    });
+
 });
 

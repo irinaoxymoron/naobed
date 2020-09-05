@@ -88,11 +88,11 @@
 }
 .slick-prev:before
 {
-    content: '←';
+    content: url(../img/slick__left.png);
 }
 [dir='rtl'] .slick-prev:before
 {
-    content: '→';
+    content: url(../img/slick__right.png);
 }
 
 .slick-next
@@ -106,11 +106,11 @@
 }
 .slick-next:before
 {
-    content: '→';
+    content: url(../img/slick__right.png);
 }
 [dir='rtl'] .slick-next:before
 {
-    content: '←';
+    content: url(../img/slick__left.png);
 }
 
 /* Dots */

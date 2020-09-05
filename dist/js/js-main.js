@@ -65,5 +65,35 @@ $(document).ready(function(){
     
     });//end ready
 
+    $('.novelty__slider').slick({
+      centerMode: true,
+      slidesToShow: 3,
+      slidesToScroll: 3,
+      arrows : true,
+      responsive: [
+          {
+            breakpoint: 865,
+            settings: {
+              slidesToShow: 3,
+              slidesToScroll: 3
+            }
+          },
+          {
+            breakpoint: 625,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 2
+            }
+          },
+          {
+            breakpoint: 500,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1
+            }
+          }
+        ]
+    });
+
 });
 
