@@ -35,6 +35,9 @@
 
 @media only screen and (max-width : 960px)  {
     .advantages {
+
+        margin-top: 55px;
+        
         &__list {
             flex-direction: column;
             align-items: center;

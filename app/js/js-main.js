@@ -21,15 +21,15 @@ $(document).ready(function(){
     });
 
     // Header fixed scroll effect
-    // var stickyOffset = $('.header').offset().top;
+    var stickyOffset = $('.header').offset().top;
 
-    // $('body').scroll(function(){
-    //   var sticky = $('.header'),
-    //       scroll = $('body').scrollTop();
+    $('body').scroll(function(){
+      var sticky = $('.header'),
+          scroll = $('body').scrollTop();
         
-    //   if (scroll >= stickyOffset) sticky.addClass('header__fixed');
-    //   else sticky.removeClass('header__fixed');
-    // });
+      if (scroll >= stickyOffset) sticky.addClass('header__fixed');
+      else sticky.removeClass('header__fixed');
+    });
 
     $(document).ready(function() {
   
@@ -65,32 +65,50 @@ $(document).ready(function(){
     
     });//end ready
 
+    if($(window).width() < 961) {
+      $('#promo-block').addClass('promo__slider')
+    } else {
+      $('#promo-block').removeClass('promo__slider')
+    }
+
+    $(window).on('resize', (e) => {
+      if($(window).width() < 961) {
+        $('#promo-block').addClass('promo__slider')
+      } else {
+        $('#promo-block').removeClass('promo__slider')
+      }
+    })
+
+    $('.promo__slider').slick({
+      infinite: true,
+      dots: true,
+      arrows: false,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      autoplay: false
+    });
+
     $('.novelty__slider').slick({
       slidesToShow: 3,
       slidesToScroll: 3,
-      // autoplay: true,
-      // autoplaySpeed: 6000,
-      arrows : false,
+      infinite: true,
+      arrows : true,
+      centerMode: true,
       responsive: [
           {
-            breakpoint: 865,
+            breakpoint: 961,
             settings: {
-              slidesToShow: 3,
-              slidesToScroll: 3
+              slidesToShow: 2,
+              slidesToScroll: 2,
+              centerMode: false
             }
           },
           {
             breakpoint: 625,
             settings: {
-              slidesToShow: 2,
-              slidesToScroll: 2
-            }
-          },
-          {
-            breakpoint: 500,
-            settings: {
               slidesToShow: 1,
-              slidesToScroll: 1
+              slidesToScroll: 1,
+              centerMode: false
             }
           }
         ]

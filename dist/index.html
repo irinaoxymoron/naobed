@@ -67,50 +67,56 @@
 
 	<div class="promo">
 		<div class="content tab-wrapper">
-			<div class="tab-content promo__list">		
-				<div class="promo__item promo__item--green">
-					<div class="promo__info">
-						<h2 class="promo__title">Заголовок на несколько строк</h2>
-						<p class="promo__text">Оплаченные заказы не&nbsp;подлежат редактированию. <br> Доставка еды осуществляется по&nbsp;всему городу Минску строго в&nbsp;соответствии с&nbsp;границами зоны доставки.</p>
-						<a href="#" class="promo__btn">Подробнее</a>
-					</div>
-					<div class="promo__img">
-						<img src="../img/promo__img.png" alt="Сок" class="promo__icon">
-					</div>
-				</div>
-				<div class="promo__item promo__item--blue">
-					<div class="promo__info">
-						<h2 class="promo__title">Заголовок на несколько строк</h2>
-						<p class="promo__text">Оплаченные заказы не&nbsp;подлежат редактированию. <br> Доставка еды осуществляется по&nbsp;всему городу Минску строго в&nbsp;соответствии с&nbsp;границами зоны доставки.</p>
-						<a href="#" class="promo__btn">Подробнее</a>
-					</div>
-					<div class="promo__img">
-						<img src="../img/promo__img.png" alt="Сок" class="promo__icon">
+			<div id="promo-block" class="tab-content promo__list">
+				<div class="promo__item--wrap">
+					<div class="promo__item promo__item--green">
+						<div class="promo__info">
+							<h2 class="promo__title">Заголовок на несколько строк</h2>
+							<p class="promo__text">Оплаченные заказы не&nbsp;подлежат редактированию. <br> Доставка еды осуществляется по&nbsp;всему городу Минску строго в&nbsp;соответствии с&nbsp;границами зоны доставки.</p>
+							<a href="#" class="promo__btn">Подробнее</a>
+						</div>
+						<div class="promo__img">
+							<img src="../img/promo__img.png" alt="Сок" class="promo__icon">
+						</div>
 					</div>
 				</div>
-				<div class="promo__item promo__item--yellow">
-					<div class="promo__info">
-						<h2 class="promo__title">Заголовок на несколько строк</h2>
-						<p class="promo__text">Оплаченные заказы не&nbsp;подлежат редактированию. <br> Доставка еды осуществляется по&nbsp;всему городу Минску строго в&nbsp;соответствии с&nbsp;границами зоны доставки.</p>
-						<a href="#" class="promo__btn">Подробнее</a>
+				<div class="promo__item--wrap">
+					<div class="promo__item promo__item--blue">
+						<div class="promo__info">
+							<h2 class="promo__title">Заголовок на несколько строк</h2>
+							<p class="promo__text">Оплаченные заказы не&nbsp;подлежат редактированию. <br> Доставка еды осуществляется по&nbsp;всему городу Минску строго в&nbsp;соответствии с&nbsp;границами зоны доставки.</p>
+							<a href="#" class="promo__btn">Подробнее</a>
+						</div>
+						<div class="promo__img">
+							<img src="../img/promo__img.png" alt="Сок" class="promo__icon">
+						</div>
 					</div>
-					<div class="promo__img">
-						<img src="../img/promo__img.png" alt="Сок" class="promo__icon">
+				</div>
+				<div class="promo__item--wrap">
+					<div class="promo__item promo__item--yellow">
+						<div class="promo__info">
+							<h2 class="promo__title">Заголовок на несколько строк</h2>
+							<p class="promo__text">Оплаченные заказы не&nbsp;подлежат редактированию. <br> Доставка еды осуществляется по&nbsp;всему городу Минску строго в&nbsp;соответствии с&nbsp;границами зоны доставки.</p>
+							<a href="#" class="promo__btn">Подробнее</a>
+						</div>
+						<div class="promo__img">
+							<img src="../img/promo__img.png" alt="Сок" class="promo__icon">
+						</div>
 					</div>
 				</div>
 			</div><!-- //tab-content -->
 			<ul class="tab-menu">
 				<li class="tab--green active">
 					<img src="../img/tab__icon.png" alt="Суп">
-					<p>Супы-новинки уже в&nbsp;продаже!</p>
+					<p>Супы-новинки <br> уже в&nbsp;продаже!</p>
 				</li>
 				<li class="tab--blue">
 					<img src="../img/tab__icon.png" alt="Суп">
-					<p>Супы-новинки уже в&nbsp;продаже!</p>
+					<p>Супы-новинки <br> уже в&nbsp;продаже!</p>
 				</li>
 				<li class="tab--yellow">
 					<img src="../img/tab__icon.png" alt="Суп">
-					<p>Супы-новинки уже в&nbsp;продаже!</p>
+					<p>Супы-новинки <br> уже в&nbsp;продаже!</p>
 				</li>
 			</ul>
 		</div>
@@ -158,33 +164,99 @@
 			<h2 class="novelty__title">Новинки</h2>
 			<div class="novelty__slider">
 				<div class="novelty__item">
-					<img src="../img/novelty__img1.jpg" alt="Суп" class="novelty__img">
-					<p class="novelty__text">сливочный суп с&nbsp;морепродуктами</p>
+					<div class="novelty__img--wrap">
+						<div class="novelty__img-hidden-text">
+							<a href="#">
+								<img src="../img/hidden__view.png" alt="">
+							</a>
+							<a href="#">
+								<img class="card__empty" src="../img/hidden__shop.png" alt="">
+								<p class="card__full">+1</p>
+							</a>
+						</div>
+						<img src="../img/novelty__img1.jpg" alt="Суп" class="novelty__img">
+					</div>
+					<p class="novelty__text">сливочный суп <br> с&nbsp;морепродуктами</p>
 					<p class="novelty__price">2 Р.</p>
 				</div>
 				<div class="novelty__item">
-					<img src="../img/novelty__img2.jpg" alt="Суп" class="novelty__img">
-					<p class="novelty__text">лосось на&nbsp;гриле с&nbsp;овощами</p>
+					<div class="novelty__img--wrap">
+						<div class="novelty__img-hidden-text">
+							<a href="#">
+								<img src="../img/hidden__view.png" alt="">
+							</a>
+							<a href="#">
+								<img class="card__empty" src="../img/hidden__shop.png" alt="">
+								<p class="card__full">+1</p>
+							</a>
+						</div>
+						<img src="../img/novelty__img2.jpg" alt="Лосось" class="novelty__img">
+					</div>
+					<p class="novelty__text">лосось на&nbsp;гриле <br> с&nbsp;овощами</p>
 					<p class="novelty__price">3,5 Р.</p>
 				</div>
 				<div class="novelty__item">
-					<img src="../img/novelty__img3.jpg" alt="Суп" class="novelty__img">
-					<p class="novelty__text">летний салат из&nbsp;свежих овощей</p>
+					<div class="novelty__img--wrap">
+						<div class="novelty__img-hidden-text">
+							<a href="#">
+								<img src="../img/hidden__view.png" alt="">
+							</a>
+							<a href="#">
+								<img class="card__empty" src="../img/hidden__shop.png" alt="">
+								<p class="card__full">+1</p>
+							</a>
+						</div>
+						<img src="../img/novelty__img3.jpg" alt="Салат" class="novelty__img">
+					</div>
+					<p class="novelty__text">летний салат <br> из&nbsp;свежих овощей</p>
 					<p class="novelty__price">2,5 Р.</p>
 				</div>
 				<div class="novelty__item">
-					<img src="../img/novelty__img1.jpg" alt="Суп" class="novelty__img">
-					<p class="novelty__text">сливочный суп с&nbsp;морепродуктами</p>
+					<div class="novelty__img--wrap">
+						<div class="novelty__img-hidden-text">
+							<a href="#">
+								<img src="../img/hidden__view.png" alt="">
+							</a>
+							<a href="#">
+								<img class="card__empty" src="../img/hidden__shop.png" alt="">
+								<p class="card__full">+1</p>
+							</a>
+						</div>
+						<img src="../img/novelty__img1.jpg" alt="Суп" class="novelty__img">
+					</div>
+					<p class="novelty__text">сливочный суп <br> с&nbsp;морепродуктами</p>
 					<p class="novelty__price">2 Р.</p>
 				</div>
 				<div class="novelty__item">
-					<img src="../img/novelty__img2.jpg" alt="Суп" class="novelty__img">
-					<p class="novelty__text">лосось на&nbsp;гриле с&nbsp;овощами</p>
+					<div class="novelty__img--wrap">
+						<div class="novelty__img-hidden-text">
+							<a href="#">
+								<img src="../img/hidden__view.png" alt="">
+							</a>
+							<a href="#">
+								<img class="card__empty" src="../img/hidden__shop.png" alt="">
+								<p class="card__full">+1</p>
+							</a>
+						</div>
+						<img src="../img/novelty__img2.jpg" alt="Лосось" class="novelty__img">
+					</div>
+					<p class="novelty__text">лосось на&nbsp;гриле <br> с&nbsp;овощами</p>
 					<p class="novelty__price">3,5 Р.</p>
 				</div>
 				<div class="novelty__item">
-					<img src="../img/novelty__img3.jpg" alt="Суп" class="novelty__img">
-					<p class="novelty__text">летний салат из&nbsp;свежих овощей</p>
+					<div class="novelty__img--wrap">
+						<div class="novelty__img-hidden-text">
+							<a href="#">
+								<img src="../img/hidden__view.png" alt="">
+							</a>
+							<a href="#">
+								<img class="card__empty" src="../img/hidden__shop.png" alt="">
+								<p class="card__full">+1</p>
+							</a>
+						</div>
+						<img src="../img/novelty__img1.jpg" alt="Салат" class="novelty__img">
+					</div>
+					<p class="novelty__text">летний салат <br> из&nbsp;свежих овощей</p>
 					<p class="novelty__price">2,5 Р.</p>
 				</div>
 			</div>
