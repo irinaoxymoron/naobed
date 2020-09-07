@@ -8,7 +8,8 @@
 	<link href='css/style.css' media='screen, projection' rel='stylesheet' type='text/css' />
 	<link rel="stylesheet" type="text/css" href="css/slick.css"/>
 	<link rel="stylesheet" type="text/css" href="css/slick-theme.css"/>
-	<link href="../img/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+	<link rel="stylesheet" type="text/css" href="css/jquery.lightbox-0.5.css" />
+	<link href="img/favicon.ico" rel="shortcut icon" type="image/x-icon" />
 </head>
 <body>
 	<header class="header">
@@ -22,41 +23,41 @@
 			</a>
 			<nav class="menu">
 				<ul class="menu__list ul-trigger">
-					<li class="menu__item"><a href="#" class="menu__link">Супы</a></li>
+					<li class="menu__item"><a href="category.html" class="menu__link">Супы</a></li>
 					<li class="menu__item"><a href="#" class="menu__link">Горячее</a></li>
 					<li class="menu__item"><a href="#" class="menu__link">Салаты</a></li>
 					<li class="menu__item"><a href="#" class="menu__link">Десерты</a></li>
 					<li class="menu__item"><a href="#" class="menu__link">Напитки</a></li>
-					<li class="menu__item menu__item--phone"><a href="#" class="menu__link">О нас</a></li>
+					<li class="menu__item menu__item--phone"><a href="about.html" class="menu__link">О нас</a></li>
 					<li class="menu__item menu__item--phone"><a href="#" class="menu__link">Доставка</a></li>
 					<a href="#" class="header__link--phone header__link--left">
-						<img src="../img/info__icon--tel.png" alt="Позвонить" class="header__icon">
+						<img src="img/info__icon--tel.png" alt="Позвонить" class="header__icon">
 					</a>
 					<a href="#" class="header__link--phone">
-						<img src="../img/info__icon--people.png" alt="Войти" class="header__icon">
+						<img src="img/info__icon--people.png" alt="Войти" class="header__icon">
 					</a>
 				</ul>
 			</nav>
 			<div class="header__logo--wrap">
-				<a href="index.html"><img src="../img/logo__header.png" alt="" class="header__logo"></a>
+				<a href="index.html"><img src="img/logo__header.png" alt="" class="header__logo"></a>
 			</div>
 			<div class="header__info">
 				<ul class="header__list">
-					<li class="header__item"><a href="#" class="menu__link">О нас</a></li>
+					<li class="header__item"><a href="about.html" class="menu__link">О нас</a></li>
 					<li class="header__item"><a href="#" class="menu__link">Доставка</a></li>
 				</ul>
 				<div class="header__icon--wrap">
 					<a href="#" class="header__link--visible">
-						<img src="../img/info__icon--tel.png" alt="Позвонить" class="header__icon">
+						<img src="img/info__icon--tel.png" alt="Позвонить" class="header__icon">
 					</a>
 					<a href="#" class="header__link--visible">
-						<img src="../img/info__icon--people.png" alt="Войти" class="header__icon">
+						<img src="img/info__icon--people.png" alt="Войти" class="header__icon">
 					</a>
 					<a href="#" class="card__empty">
-						<img src="../img/info__icon--cardempty.png" alt="Корзина" class="header__icon">
+						<img src="img/info__icon--cardempty.png" alt="Корзина" class="header__icon">
 					</a>
-					<a href="#" class="card__full">
-						<img src="../img/info__icon--cardfull.png" alt="Корзина" class="header__icon">
+					<a href="cart.html" class="card__full">
+						<img src="img/info__icon--cardfull.png" alt="Корзина" class="header__icon">
 						<span class="card__text">4</span>
 					</a>
 				</div>
@@ -76,7 +77,7 @@
 							<a href="#" class="promo__btn">Подробнее</a>
 						</div>
 						<div class="promo__img">
-							<img src="../img/promo__img.png" alt="Сок" class="promo__icon">
+							<img src="img/promo__img.png" alt="Сок" class="promo__icon">
 						</div>
 					</div>
 				</div>
@@ -88,7 +89,7 @@
 							<a href="#" class="promo__btn">Подробнее</a>
 						</div>
 						<div class="promo__img">
-							<img src="../img/promo__img.png" alt="Сок" class="promo__icon">
+							<img src="img/promo__img.png" alt="Сок" class="promo__icon">
 						</div>
 					</div>
 				</div>
@@ -100,22 +101,22 @@
 							<a href="#" class="promo__btn">Подробнее</a>
 						</div>
 						<div class="promo__img">
-							<img src="../img/promo__img.png" alt="Сок" class="promo__icon">
+							<img src="img/promo__img.png" alt="Сок" class="promo__icon">
 						</div>
 					</div>
 				</div>
 			</div><!-- //tab-content -->
 			<ul class="tab-menu">
 				<li class="tab--green active">
-					<img src="../img/tab__icon.png" alt="Суп">
+					<img src="img/tab__icon.png" alt="Суп">
 					<p>Супы-новинки <br> уже в&nbsp;продаже!</p>
 				</li>
 				<li class="tab--blue">
-					<img src="../img/tab__icon.png" alt="Суп">
+					<img src="img/tab__icon.png" alt="Суп">
 					<p>Супы-новинки <br> уже в&nbsp;продаже!</p>
 				</li>
 				<li class="tab--yellow">
-					<img src="../img/tab__icon.png" alt="Суп">
+					<img src="img/tab__icon.png" alt="Суп">
 					<p>Супы-новинки <br> уже в&nbsp;продаже!</p>
 				</li>
 			</ul>
@@ -123,41 +124,46 @@
 	</div>
 
 	<div class="categories">
-		<div class="content">
-			<ul class="categories__list">
-				<li class="categories__item">
-					<a href="#" class="categories__link">
-						<img src="../img/categories__icon--soup.png" alt="Супы" class="categories__icon">
-						<p class="categories__text">Супы</p>
-					</a>
-				</li>
-				<li class="categories__item">
-					<a href="#" class="categories__link">
-						<img src="../img/categories__icon--hot.png" alt="Горячее" class="categories__icon">
-						<p class="categories__text">Горячее</p>
-					</a>
-				</li>
-				<li class="categories__item">
-					<a href="#" class="categories__link">
-						<img src="../img/categories__icon--salad.png" alt="Салаты" class="categories__icon">
-						<p class="categories__text">Салаты</p>
-					</a>
-				</li>
-				<li class="categories__item">
-					<a href="#" class="categories__link">
-						<img src="../img/categories__icon--dessert.png" alt="Десерты" class="categories__icon">
-						<p class="categories__text">Десерты</p>
-					</a>
-				</li>
-				<li class="categories__item">
-					<a href="#" class="categories__link">
-						<img src="../img/categories__icon--drink.png" alt="Напитки" class="categories__icon">
-						<p class="categories__text">Напитки</p>
-					</a>
-				</li>
-			</ul>
-		</div>
+	<div class="content">
+		<ul class="categories__list">
+			<li class="categories__item">
+				<a href="#" class="categories__link">
+					<img src="img/categories__icon--soup.png" alt="Супы" class="categories__icon">
+					<img src="img/categories__icon--soup-active.png" alt="Супы" class="categories__icon categories__icon--active">
+					<p class="categories__text">Супы</p>
+				</a>
+			</li>
+			<li class="categories__item">
+				<a href="#" class="categories__link">
+					<img src="img/categories__icon--hot.png" alt="Горячее" class="categories__icon">
+					<img src="img/categories__icon--hot-active.png" alt="Супы" class="categories__icon categories__icon--active">
+					<p class="categories__text">Горячее</p>
+				</a>
+			</li>
+			<li class="categories__item">
+				<a href="#" class="categories__link">
+					<img src="img/categories__icon--salad.png" alt="Салаты" class="categories__icon">
+					<img src="img/categories__icon--salad-active.png" alt="Супы" class="categories__icon categories__icon--active">
+					<p class="categories__text">Салаты</p>
+				</a>
+			</li>
+			<li class="categories__item">
+				<a href="#" class="categories__link">
+					<img src="img/categories__icon--dessert.png" alt="Десерты" class="categories__icon">
+					<img src="img/categories__icon--dessert-active.png" alt="Супы" class="categories__icon categories__icon--active">
+					<p class="categories__text">Десерты</p>
+				</a>
+			</li>
+			<li class="categories__item">
+				<a href="#" class="categories__link">
+					<img src="img/categories__icon--drink.png" alt="Напитки" class="categories__icon">
+					<img src="img/categories__icon--drink-active.png" alt="Супы" class="categories__icon categories__icon--active">
+					<p class="categories__text">Напитки</p>
+				</a>
+			</li>
+		</ul>
 	</div>
+</div>
 
 	<div class="novelty">
 		<div class="content">
@@ -166,15 +172,15 @@
 				<div class="novelty__item">
 					<div class="novelty__img--wrap">
 						<div class="novelty__img-hidden-text">
-							<a href="#">
-								<img src="../img/hidden__view.png" alt="">
+							<a href="#" class="show-modal open-modal">
+								<img src="img/hidden__view.png" alt="">
 							</a>
 							<a href="#">
-								<img class="card__empty" src="../img/hidden__shop.png" alt="">
+								<img class="card__empty" src="img/hidden__shop.png" alt="">
 								<p class="card__full">+1</p>
 							</a>
 						</div>
-						<img src="../img/novelty__img1.jpg" alt="Суп" class="novelty__img">
+						<img src="img/novelty__img1.jpg" alt="Суп" class="novelty__img">
 					</div>
 					<p class="novelty__text">сливочный суп <br> с&nbsp;морепродуктами</p>
 					<p class="novelty__price">2 Р.</p>
@@ -182,15 +188,15 @@
 				<div class="novelty__item">
 					<div class="novelty__img--wrap">
 						<div class="novelty__img-hidden-text">
-							<a href="#">
-								<img src="../img/hidden__view.png" alt="">
+							<a href="#" class="show-modal open-modal">
+								<img src="img/hidden__view.png" alt="">
 							</a>
 							<a href="#">
-								<img class="card__empty" src="../img/hidden__shop.png" alt="">
+								<img class="card__empty" src="img/hidden__shop.png" alt="">
 								<p class="card__full">+1</p>
 							</a>
 						</div>
-						<img src="../img/novelty__img2.jpg" alt="Лосось" class="novelty__img">
+						<img src="img/novelty__img2.jpg" alt="Лосось" class="novelty__img">
 					</div>
 					<p class="novelty__text">лосось на&nbsp;гриле <br> с&nbsp;овощами</p>
 					<p class="novelty__price">3,5 Р.</p>
@@ -198,15 +204,15 @@
 				<div class="novelty__item">
 					<div class="novelty__img--wrap">
 						<div class="novelty__img-hidden-text">
-							<a href="#">
-								<img src="../img/hidden__view.png" alt="">
+							<a href="#" class="show-modal open-modal">
+								<img src="img/hidden__view.png" alt="">
 							</a>
 							<a href="#">
-								<img class="card__empty" src="../img/hidden__shop.png" alt="">
+								<img class="card__empty" src="img/hidden__shop.png" alt="">
 								<p class="card__full">+1</p>
 							</a>
 						</div>
-						<img src="../img/novelty__img3.jpg" alt="Салат" class="novelty__img">
+						<img src="img/novelty__img3.jpg" alt="Салат" class="novelty__img">
 					</div>
 					<p class="novelty__text">летний салат <br> из&nbsp;свежих овощей</p>
 					<p class="novelty__price">2,5 Р.</p>
@@ -214,15 +220,15 @@
 				<div class="novelty__item">
 					<div class="novelty__img--wrap">
 						<div class="novelty__img-hidden-text">
-							<a href="#">
-								<img src="../img/hidden__view.png" alt="">
+							<a href="#" class="show-modal open-modal">
+								<img src="img/hidden__view.png" alt="">
 							</a>
 							<a href="#">
-								<img class="card__empty" src="../img/hidden__shop.png" alt="">
+								<img class="card__empty" src="img/hidden__shop.png" alt="">
 								<p class="card__full">+1</p>
 							</a>
 						</div>
-						<img src="../img/novelty__img1.jpg" alt="Суп" class="novelty__img">
+						<img src="img/novelty__img1.jpg" alt="Суп" class="novelty__img">
 					</div>
 					<p class="novelty__text">сливочный суп <br> с&nbsp;морепродуктами</p>
 					<p class="novelty__price">2 Р.</p>
@@ -230,15 +236,15 @@
 				<div class="novelty__item">
 					<div class="novelty__img--wrap">
 						<div class="novelty__img-hidden-text">
-							<a href="#">
-								<img src="../img/hidden__view.png" alt="">
+							<a href="#" class="show-modal open-modal">
+								<img src="img/hidden__view.png" alt="">
 							</a>
 							<a href="#">
-								<img class="card__empty" src="../img/hidden__shop.png" alt="">
+								<img class="card__empty" src="img/hidden__shop.png" alt="">
 								<p class="card__full">+1</p>
 							</a>
 						</div>
-						<img src="../img/novelty__img2.jpg" alt="Лосось" class="novelty__img">
+						<img src="img/novelty__img2.jpg" alt="Лосось" class="novelty__img">
 					</div>
 					<p class="novelty__text">лосось на&nbsp;гриле <br> с&nbsp;овощами</p>
 					<p class="novelty__price">3,5 Р.</p>
@@ -246,15 +252,15 @@
 				<div class="novelty__item">
 					<div class="novelty__img--wrap">
 						<div class="novelty__img-hidden-text">
-							<a href="#">
-								<img src="../img/hidden__view.png" alt="">
+							<a href="#" class="show-modal open-modal">
+								<img src="img/hidden__view.png" alt="">
 							</a>
 							<a href="#">
-								<img class="card__empty" src="../img/hidden__shop.png" alt="">
+								<img class="card__empty" src="img/hidden__shop.png" alt="">
 								<p class="card__full">+1</p>
 							</a>
 						</div>
-						<img src="../img/novelty__img1.jpg" alt="Салат" class="novelty__img">
+						<img src="img/novelty__img1.jpg" alt="Салат" class="novelty__img">
 					</div>
 					<p class="novelty__text">летний салат <br> из&nbsp;свежих овощей</p>
 					<p class="novelty__price">2,5 Р.</p>
@@ -267,17 +273,17 @@
 		<div class="content">
 			<div class="advantages__list">
 				<div class="advantages__item">
-					<img src="../img/advantages__icon--delivery.png" alt="Доставка" class="advantages__icon">
+					<img src="img/advantages__icon--delivery.png" alt="Доставка" class="advantages__icon">
 					<h2 class="advantages__title">доставка за&nbsp;60&nbsp;минут</h2>
 					<p class="advantages__text">Доставим заказ по&nbsp;Минску в&nbsp;течение часа</p>
 				</div>
 				<div class="advantages__item">
-					<img src="../img/advantages__icon--pay.png" alt="Удобная оплата" class="advantages__icon">
+					<img src="img/advantages__icon--pay.png" alt="Удобная оплата" class="advantages__icon">
 					<h2 class="advantages__title">удобная оплата</h2>
 					<p class="advantages__text">Оплачивайте заказы через сайт или&nbsp;курьеру при получении</p>
 				</div>
 				<div class="advantages__item">
-					<img src="../img/advantages__icon--food.png" alt="Cвежие продукты" class="advantages__icon">
+					<img src="img/advantages__icon--food.png" alt="Cвежие продукты" class="advantages__icon">
 					<h2 class="advantages__title">только свежие продукты</h2>
 					<p class="advantages__text">Для наших блюд мы&nbsp;используем свежие и&nbsp;проверенные ингредиенты</p>
 				</div>
@@ -347,7 +353,7 @@
 					<a href="#" class="calendar__btn">Подробнее</a>
 				</div>
 				<div class="calendar__img">
-					<img src="../img/week__img.png" alt="">
+					<img src="img/week__img.png" alt="">
 				</div>
 			</div>
 		</div>
@@ -385,15 +391,31 @@
                 </ul>
             </div>
             <div class="footer__pay">
-                <img src="../img/footer__icon--visa.png" alt="Visa">
-                <img src="../img/footer__icon--mc.png" alt="Master Card">
-                <img src="../img/footer__icon--bepaid.png" alt="Be Paid">
+                <img src="img/footer__icon--visa.png" alt="Visa">
+                <img src="img/footer__icon--mc.png" alt="Master Card">
+                <img src="img/footer__icon--bepaid.png" alt="Be Paid">
             </div>
         </div>
     </div>
 </footer>
 
+	<div class="modal">
+		<a class="close-modal" href="#">
+			<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+			viewBox="0 0 47.971 47.971" style="enable-background:new 0 0 47.971 47.971;" xml:space="preserve">
+			<g><path d="M28.228,23.986L47.092,5.122c1.172-1.171,1.172-3.071,0-4.242c-1.172-1.172-3.07-1.172-4.242,0L23.986,19.744L5.121,0.88
+				c-1.172-1.172-3.07-1.172-4.242,0c-1.172,1.171-1.172,3.071,0,4.242l18.865,18.864L0.879,42.85c-1.172,1.171-1.172,3.071,0,4.242
+				C1.465,47.677,2.233,47.97,3,47.97s1.535-0.293,2.121-0.879l18.865-18.864L42.85,47.091c0.586,0.586,1.354,0.879,2.121,0.879
+				s1.535-0.293,2.121-0.879c1.172-1.171,1.172-3.071,0-4.242L28.228,23.986z"/></g>
+			</svg>
+		</a>
+		<div class="modal__content">
+			<p>trbrj</p>
+		</div>
+	</div>
+
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+	<script type="text/javascript" src="js/jquery.lightbox-0.5.pack.js"></script>
 	<script src="js/slick.min.js"></script>
 	<script src="js/js-main.js"></script>
 </body>

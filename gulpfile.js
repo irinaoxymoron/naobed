@@ -63,7 +63,7 @@ gulp.task('moveHtml', function () {
 gulp.task('sprite', function(cb) {
     const spriteData = gulp.src('app/img/icons/*.png').pipe(spritesmith({
         imgName: 'sprite.png',
-        imgPath: '../../img/sprite.png',
+        imgPath: '../img/sprite.png',
         cssName: '_sprite.scss'
     }));
 
