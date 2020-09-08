@@ -1,0 +1,106 @@
+.faq {
+
+    margin-top: 85px;
+
+    &__title {
+        @include Cormac-Black();
+        text-transform: uppercase;
+        font-size: 57px;
+        line-height: 60px;
+        text-align: center;
+    }
+
+    &__subtitle {
+        text-align: center;
+        color: #ff4b2e;
+        font-style: italic;
+        font-size: 17px;
+        line-height: 20px;
+        margin-top: 5px;
+    }
+}
+
+/* Acordian styles */
+.accordion {
+    margin-top: 60px;
+
+    &__tab {
+        position: relative;
+        max-width: 770px;
+        margin: 0 auto;
+        width: 100%;
+        color: #000;
+        overflow: hidden;
+    
+        & input {
+            position: absolute;
+            opacity: 0;
+            z-index: -1;
+        }
+        
+        & label {
+            @include Cormac-Black();
+            text-transform: uppercase;
+            font-size: 18px;
+            line-height: 20px;
+            padding: 29px 33px 20px;
+            position: relative;
+            display: block;
+            background: #f2f7f6;
+            cursor: pointer;
+            margin-bottom: 10px;
+        }
+    
+        &-content {
+            max-height: 0;
+            overflow: hidden;
+            background: #fff;
+            transition: max-height .35s;
+    
+            & p {
+                font-size: 17px;
+                line-height: 21px;
+                padding: 20px 33px;
+                margin-bottom: 24px;
+            }
+        }
+    
+        /* :checked */
+        input:checked ~ .accordion__tab-content {
+            max-height: 20em;
+        }
+    
+        /* Icon */
+        label::after {
+            position: absolute;
+            right: 15px;
+            top: 44%;
+            height: 20px;
+            transition: all .35s;
+        }
+        input[type=checkbox] + label::after {
+            content: "\2795";
+        }
+        input[type=checkbox]:checked + label::after {
+            transform: rotate(180deg);
+            content: "";
+            width: 15px;
+            height: 4px;
+            background: #464646;
+            right: 15px;
+            top: 44%;
+            height: 4px;
+        }
+    }
+}
+
+@media only screen and (max-width : 960px) {
+    .faq {
+        margin-top: 30px;
+
+        &__title {
+            font-size: 30px;
+            line-height: 33px;
+        }
+    }
+}

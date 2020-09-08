@@ -19,6 +19,13 @@
     &__item {
         width: 32%;
     }
+
+    &__subtitle {
+        @include Cormac-Black();
+        font-size: 17px;
+        text-transform: uppercase;
+        margin-top: 28px;
+    }
 }
 
 @media only screen and (max-width : 960px) {
