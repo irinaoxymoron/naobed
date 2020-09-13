@@ -14,6 +14,126 @@
 <body>
 	@@include('./header.html')
 
+	<div class="cart">
+		<div class="content">
+			<h1 class="cart__title">Корзина</h1>
+			<div class="cart__nav">
+				<div class="cart__name">Товар</div>
+				<div class="cart__price">Цена</div>
+				<div class="cart__counter">Кол-во</div>
+				<div class="cart__final">Итого</div>
+			</div>
+			<div class="cart__list">
+				<div class="cart__item">
+					<div class="cart__name">
+						<img src="img/cart__img1.jpg" alt="Продукт">
+						<p>сливочный суп с&nbsp;морепродуктами</p>
+					</div>
+					<div class="cart__price">2 Р.</div>
+					<div class="cart__counter">
+						<div class="cart__counter--inner">
+							<a href="#">—</a>
+							<div>1</div>
+							<a href="#">+</a>
+						</div>
+					</div>
+					<div class="cart__final">2 Р.</div>
+					<div class="cart__close">
+						<a href="#">&#65794;</a>
+					</div>
+				</div>
+				<div class="cart__item">
+					<div class="cart__name">
+						<img src="img/cart__img1.jpg" alt="Продукт">
+						<p>сливочный суп с&nbsp;морепродуктами</p>
+					</div>
+					<div class="cart__price">2 Р.</div>
+					<div class="cart__counter">
+						<div class="cart__counter--inner">
+							<a href="#">—</a>
+							<div>1</div>
+							<a href="#">+</a>
+						</div>
+					</div>
+					<div class="cart__final">2 Р.</div>
+					<div class="cart__close">
+						<a href="#">&#65794;</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="form">
+		<div class="content">
+			<div class="form__content">
+				<h2 class="form__title">Оформление заказа</h2>
+				<div class="form--wrap">
+					<form method="post">
+						<div class="form__string">
+							<div class="form__column">
+								<label for="name">Имя</label>
+								<input name="name" type="text" id="name">
+							</div>
+							<div class="form__column">
+								<label for="surname">Фамилия</label>
+								<input name="surname" type="text" id="surname">
+							</div>
+						</div>
+						<div class="form__string">
+							<div class="form__column">
+								<label for="address">Адрес</label>
+								<input name="address" type="text" id="address">
+							</div>
+							<div class="form__coordinates">
+								<div>
+									<label for="house">Дом</label>
+									<input name="house" type="text" id="house">
+								</div>
+								<div>
+									<label for="pavilion">Корпус</label>
+									<input name="pavilion" type="text" id="pavilion">
+								</div>
+								<div>
+									<label for="room">Офис/квартира</label>
+									<input name="room" type="text" id="room">
+								</div>
+							</div>
+						</div>
+						<div class="form__string">
+							<div class="form__column">
+								<label for="phone">Телефон</label>
+								<input name="phone" type="tel" id="phone">
+							</div>
+							<div class="form__column">
+								<label for="email">Электронная почта</label>
+								<input name="email" type="email" id="email">
+							</div>
+						</div>
+						<div class="form__string">
+							<div class="form__column">
+								<label for="comment">Комментарий</label>
+								<textarea name="comment" rows="5"></textarea>
+							</div>
+							<div class="form__column">
+								<label for="pay">Способ оплаты</label>
+								<select>
+									<option value="Наличными курьеру" selected>Наличными курьеру</option>
+									<option value="Оплата картой">Оплата картой</option>
+									<option value="Денежный перевод">Денежный перевод</option>
+								</select> 
+							</div>
+						</div>
+						<div class="form__btn">
+							<a href="#">Отправить заказ</a>
+							<div class="form__final">Итого: 20 Р. (Доставка бесплатно)</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
 	@@include('./block-advantages.html')
 
 	@@include('./footer.html')
